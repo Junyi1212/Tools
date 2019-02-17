@@ -1,0 +1,28 @@
+JIRA-ID Short-message
+%TBC %NF=
+                                                                                                  
+BACKGROUND:                                                                                       
+---                                                                                               
+- write something
+                                                                                                  
+SOLUTION:                                                                                         
+---                                                                                               
+$WA:No $LI:No                                                                         
+- write something
+                                                                                                  
+IMPACT:                                                                                           
+---                                                                                               
+$PERF:No $SCM:No $SPEC:No $TEST:No $COMP:No $TEST_ID=No 
+- No impact.
+                                                                                                  
+KEY REVIEWERS:                                                                                    
+---                                                                                               
+- ZhangSan
+- LiSi
+                                                                                                  
+TESTING:                                                                                          
+---                                                                                               
+- Build       [N/A]                                                                            
+- UT          [N/A]                                                                            
+- SCT         [N/A]                                                                            
+- Valgrind    [N/A]                                                                            

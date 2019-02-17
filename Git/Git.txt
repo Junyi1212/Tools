@@ -1,0 +1,21 @@
+git fetch origin
+git merge origin/master
+git pull(==git fetch+git merge)
+git pull --rebase origin master
+
+git push origin master:refs/for/master
+git push origin MAINBRANCH_LRC:refs/for/MAINBRANCH_LRC
+git push origin FBLRC1807:refs/for/FBLRC1807
+git push origin FBLRC1806:refs/for/FBLRC1806
+
+git reset --hard origin/master
+git reset --hard HEAD^
+
+git merge --squash dev
+git commit --amend
+
+
+wiki:
+git fetch
+git rebase origin/master
+git push origin HEAD:refs/for/master

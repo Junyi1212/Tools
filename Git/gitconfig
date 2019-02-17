@@ -1,0 +1,7 @@
+[color]
+	ui = true
+[user]
+	email = lian.yun@nokia-sbell.com
+	name = lyun
+[commit]
+	template = /home/lyun/.gitmessage.txt

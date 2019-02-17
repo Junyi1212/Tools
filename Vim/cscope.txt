@@ -1,0 +1,28 @@
+
+创建ctags：
+	ctags -R
+
+
+创建cscope数据库：
+	cscope -Rbkq
+
+cscope查找：
+	cs find c|d|e|f|g|i|s|t name
+	Ctrl+@ c|d|e|f|g|i|s|t
+		s查找本 C 符号(可以跳过注释)
+		g查找本定义
+		d查找本函数调用的函数
+		c查找调用本函数的函数
+		t查找本字符串
+		e查找本 egrep 模式
+		f查找本文件
+		i查找包含本文件的文件
+
+
+
+打开QuikFix窗口：
+	:cw
+	:cw
+
+
+

@@ -1,0 +1,64 @@
+"misc"
+syntax enable
+syntax on
+colorscheme desert
+set nu
+set ts=4
+nmap w= :res+3<cr>
+nmap w- :res-3<cr>
+nmap h= :vertical res+3<cr>
+nmap h- :vertical res-3<cr>
+
+"winManager"
+let g:winManagerWindowLayout='FileExplorer|TagList'
+nmap <F5> :WMToggle<cr>
+
+"miniBuf"
+let g:miniBufExplMapCTabSwitchBufs = 1
+let g:miniBufExplMapWindowNavVim = 1
+let g:miniBufExplMapWindowNavArrows = 1
+
+"ctags"
+"set tags=/var/fpwork/lyun/CCS/tags"
+set tags=/var/fpwork/lyun/r4/tags
+"set tags=tags;"
+"set autochdir"
+filetype plugin indent on
+set completeopt=longest,menu
+let g:SuperTabRetainCompletionType=2
+let g:SuperTabDefaultCompletionType="<C-X><C-O>"
+
+"taglist"
+let Tlist_Show_One_File=0
+let Tlist_Exit_OnlyWindow=1
+let Tlist_File_Fold_Auto_Close=1
+"map tl :TlistToggle<cr>"
+
+"quickfix"
+nmap <F6> :cp<cr>
+nmap <F7> :cn<cr>
+
+"cscope"
+set cscopequickfix=s-,c-,d-,i-,t-,e-
+if has("cscope")
+	set csprg=/usr/bin/cscope
+	set csto=1
+	set cst
+	set nocsverb
+	if filereadable("cscope.out")
+		cs add cscope.out
+	endif
+	set csverb
+endif
+nmap <C-@>s :cs find s <C-R>=expand("<cword>")<CR><CR>
+nmap <C-@>g :cs find g <C-R>=expand("<cword>")<CR><CR>
+nmap <C-@>c :cs find c <C-R>=expand("<cword>")<CR><CR>
+nmap <C-@>t :cs find t <C-R>=expand("<cword>")<CR><CR>
+nmap <C-@>e :cs find e <C-R>=expand("<cword>")<CR><CR>
+nmap <C-@>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
+nmap <C-@>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+nmap <C-@>d :cs find d <C-R>=expand("<cword>")<CR><CR>
+
+"grep"
+"nnoremap <silent> <F3> :Grep<CR>"
+
